@@ -10,4 +10,13 @@ result of Math Complex Numbers1.0-2.0i
   Thu Oct 26 21:14:14 YEKT 2023
  Исполнена математическая операция - >>> Substract of complex numbers
 result of Math Complex Numbers 1.0+4.0i
+Thu Oct 26 21:23:27 YEKT 2023
+ Исполнена математическая операция - >>> Summa of complex numbers 
+result of Math Complex Numbers 9.0+8.0i
+Thu Oct 26 21:23:38 YEKT 2023
+ Исполнена математическая операция - >>> Substract of complex numbers
+result of Math Complex Numbers 1.0+4.0i
+Thu Oct 26 21:27:56 YEKT 2023
+ Исполнена математическая операция - >>> Multiple of complex numbers
+result of Math Complex Numbers 3.0+28.0i
 

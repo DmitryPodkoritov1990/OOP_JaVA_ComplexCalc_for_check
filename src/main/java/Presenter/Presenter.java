@@ -45,21 +45,28 @@ public class Presenter {
             } catch (IOException e) {
                 e.getMessage();
             }
+        }
             if (swt == 3) {
                 ComplexNumberM.ComplexNumber.multiple(a, b);
                 System.out.println("Произведение комплексных чисел равно: ");
                 System.out.println(a.toString() + " * " + b.toString() + " = " + ComplexNumberM.ComplexNumber.multiple(a, b).toString());
+                try {
+                    loger.loger1("Multiple of complex numbers", ComplexNumberM.ComplexNumber.multiple(a, b));
+                } catch (IOException e) {
+                    e.getMessage();
+                }
             }
-            if (swt == 4) {
-                ComplexNumberM.ComplexNumber.divide(a, b);
-                System.out.println("Деление комплексных чисел равно: ");
-                System.out.println(a.toString() + " / " + b.toString() + " = " + ComplexNumberM.ComplexNumber.divide(a, b).toString());
+                if (swt == 4) {
+                    ComplexNumberM.ComplexNumber.divide(a, b);
+                    System.out.println("Деление комплексных чисел равно: ");
+                    System.out.println(a.toString() + " / " + b.toString() + " = " + ComplexNumberM.ComplexNumber.divide(a, b).toString());
+
+                }
 
             }
-
         }
-    }
-}
+
+
 
 
 
