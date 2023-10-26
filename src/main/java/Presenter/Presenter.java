@@ -31,29 +31,33 @@ public class Presenter {
             System.out.println("Сумма комплексных чисел равна: ");
             System.out.println(a.toString() + " + " + b.toString() + " = " + ComplexNumberM.ComplexNumber.add(a, b).toString());
             try {
-                loger.loger1("Summa", ComplexNumberM.ComplexNumber.add(a,b));
-            } catch (IOException e){
+                loger.loger1("Summa of complex numbers ", ComplexNumberM.ComplexNumber.add(a, b));
+            } catch (IOException e) {
                 e.getMessage();
             }
         }
         if (swt == 2) {
             ComplexNumberM.ComplexNumber.substract(a, b);
             System.out.println("Разность комплексных чисел равна: ");
-            System.out.println(a.toString()+ " - " +b.toString()+" = " +ComplexNumberM.ComplexNumber.substract(a,b).toString());
+            System.out.println(a.toString() + " - " + b.toString() + " = " + ComplexNumberM.ComplexNumber.substract(a, b).toString());
+            try {
+                loger.loger1("Substract of complex numbers", ComplexNumberM.ComplexNumber.substract(a, b));
+            } catch (IOException e) {
+                e.getMessage();
+            }
+            if (swt == 3) {
+                ComplexNumberM.ComplexNumber.multiple(a, b);
+                System.out.println("Произведение комплексных чисел равно: ");
+                System.out.println(a.toString() + " * " + b.toString() + " = " + ComplexNumberM.ComplexNumber.multiple(a, b).toString());
+            }
+            if (swt == 4) {
+                ComplexNumberM.ComplexNumber.divide(a, b);
+                System.out.println("Деление комплексных чисел равно: ");
+                System.out.println(a.toString() + " / " + b.toString() + " = " + ComplexNumberM.ComplexNumber.divide(a, b).toString());
+
+            }
 
         }
-        if(swt ==3){
-            ComplexNumberM.ComplexNumber.multiple(a,b);
-            System.out.println("Произведение комплексных чисел равно: ");
-            System.out.println(a.toString()+ " * " +b.toString()+" = " +ComplexNumberM.ComplexNumber.multiple(a,b).toString());
-        }
-        if(swt ==4){
-            ComplexNumberM.ComplexNumber.divide(a,b);
-            System.out.println("Деление комплексных чисел равно: ");
-            System.out.println(a.toString()+ " / " +b.toString()+" = " +ComplexNumberM.ComplexNumber.divide(a,b).toString());
-
-        }
-
     }
 }
 
