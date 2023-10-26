@@ -1,12 +1,14 @@
 package Presenter;
 
 import Model.ComplexNumberM;
+import Loger.Loger;
 
+import java.io.IOException;
 import java.util.Scanner;
 public class Presenter {
 
     public void StartCalc() {
-
+        Loger loger = new Loger();
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите вещественную часть 1-го комплекного числа ");
         double re = scanner.nextDouble();
@@ -28,6 +30,11 @@ public class Presenter {
             ComplexNumberM.ComplexNumber.add(a, b);
             System.out.println("Сумма комплексных чисел равна: ");
             System.out.println(a.toString() + " + " + b.toString() + " = " + ComplexNumberM.ComplexNumber.add(a, b).toString());
+            try {
+                loger.loger1("Summa", ComplexNumberM.ComplexNumber.add(a,b));
+            } catch (IOException e){
+                e.getMessage();
+            }
         }
         if (swt == 2) {
             ComplexNumberM.ComplexNumber.substract(a, b);
